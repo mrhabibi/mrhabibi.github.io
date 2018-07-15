@@ -16,9 +16,9 @@
 	<script>
 	    $(document).ready(function(){
 	      var urlParams = new URLSearchParams(window.location.search);
-		    	if(urlParams.has('code') && urlParams.get('code').startsWith("rh")) {
-		    		code = urlParams.get('code')
-		        	url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + code + '&amp;size=100x100';
+		    	if(urlParams.has('qr') && urlParams.get('qr').startsWith("rh")) {
+		    		qr = urlParams.get('qr')
+		        	url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + qr + '&amp;size=100x100';
                 	$('#barcode').attr('src', url);
 		    	} else {
 		    		window.location.replace("error.html");
