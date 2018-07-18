@@ -41,6 +41,6 @@ function init() {
     
 }
 function navigate() {
-  window.open('https://goo.gl/maps/jcsYDsPiMwQ2')
+  window.open('https://goo.gl/maps/iEg3m6sKxmL2')
 }
 google.maps.event.addDomListener(window, 'load', init);
