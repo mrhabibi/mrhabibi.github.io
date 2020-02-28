@@ -1,5 +1,9 @@
 <html>
+
 <body>
-<input type="file" accept="image/*;capture=camera"/>
+    <img id="blah" alt="your image" width="100" height="100" />
+    <input type="file" accept="image/*;capture=camera"
+        onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
 </body>
+
 </html>
