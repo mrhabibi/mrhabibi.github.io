@@ -1,5 +1,19 @@
 <html>
-<head>
+
+<body>
+    <img id="blah" alt="your image" width="100" height="100" />
+    <input type="file" accept="image/*;capture=camera"
+        onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+
+    <br />
+    <br />
+    <a href="https://www.7-zip.org/a/7z1900-x64.exe" download>
+        <button type="button">Download me!</button>
+    </a>
+    </br></br>
+    <button onclick="getLocation()">Locate me!</button>
+    <p id="demo"></p>
+
     <script>
         var x = document.getElementById("demo");
 
@@ -16,20 +30,6 @@
                 "<br>Longitude: " + position.coords.longitude;
         }
     </script>
-</head>
-<body>
-    <img id="blah" alt="your image" width="100" height="100" />
-    <input type="file" accept="image/*;capture=camera"
-        onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
-
-        <br/>
-    <br/></br>
-    <a href="https://www.w3schools.com/images/myw3schoolsimage.jpg" download>
-        <button type="button">Download me!</button>
-    </a>
-    </br></br>
-    <button onclick="getLocation()">Locate me!</button>
-    <p id="demo"></p>
 </body>
 
 </html>
